@@ -7,27 +7,19 @@ import { Login } from "./Components/Login";
 import { Register } from "./Components/Register";
 import { BrowserRouter as Router, Switch, Route, Redirect,} from "react-router-dom";
 import Namegenerator from './Components/Namegenerator';
-import ListPage from './Components/ListPage'
-import { getPosts } from './Components/axios'
+import { Results } from './Components/Results';
+
+
 
 
 function App() {
 
-  const [posts, setPosts] = useState([])
-  const [searchResults, setSearchResults] = useState([])
-
-  useEffect(() => {
-    getPosts().then(json => {
-      setPosts(json)
-      setSearchResults(json)
-    })
-  }, [])
-
-
   return (
     <div className="App">
-      <Namegenerator posts={posts} setSearchResults={setSearchResults}/>
-       <ListPage searchResults={searchResults} />
+    <Namegenerator/>
+    <Results/>
+    
+      {/* <Test/> */}
       {/*<Header/>
       <Generator/>
       <Services/>

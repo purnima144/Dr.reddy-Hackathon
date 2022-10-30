@@ -1,17 +1,11 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
+import { useNavigate,Link } from "react-router-dom";
+import { Results } from "./Results";
 
-function Namegenerator({ posts, setSearchResults }){
 
-    const handleSubmit = (e) => e.preventDefault()
 
-    const handleSearchChange = (e) => {
-        {/*if search input is empty display all results*/}
-        if (!e.target.value) return setSearchResults(posts)
-
-        const resultsArray = posts.filter(post => post.title.includes(e.target.value) )
-
-        setSearchResults(resultsArray)
-    }
+function Namegenerator(){
+ 
     return(
     <>
         <div class="container">
@@ -25,7 +19,7 @@ function Namegenerator({ posts, setSearchResults }){
         <p className="drug-dis">generate brandable drug name using artificial intelligence</p>
         <hr/>
         <label for="fn"><b>Input:</b></label>
-        <input type="text" placeholder="Name" name="fn" id="fn" onChange={handleSearchChange}  required/>
+        <input type="text" placeholder="Name" name="fn" id="fn" required/>
 
         <label for="ln"><b>Country Name:</b></label>
         <input type="text" placeholder="Country Name" name="ln" id="ln" required/>
@@ -37,7 +31,7 @@ function Namegenerator({ posts, setSearchResults }){
             <option value="suffix">List of strings suffix</option>
         </select>
         <hr/>
-        <button class="generate-btn" type="submit"  onSubmit={handleSubmit}>Generate</button>
+        <button class="generate-btn" type="submit">Generate</button>
         </form>
     </div>
     </>
@@ -45,3 +39,4 @@ function Namegenerator({ posts, setSearchResults }){
 }
 
 export default Namegenerator;
+
