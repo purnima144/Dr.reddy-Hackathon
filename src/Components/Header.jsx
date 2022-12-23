@@ -10,10 +10,9 @@ function Header(){
                 <p className='details'>generate brandable drug name using artificial intelligence</p>
                 <div className='header-btns'>
                     <a href="a" className='cv-btn'>Know more</a>
-                    <a href="a" className='cv-btn1'>Download App</a>
+                    <a href="a" className='cv-btn1'>About us</a>
                 </div>
             </div>
-           {/* <div className='arrow'></div> */}
         </div>
     )
 }

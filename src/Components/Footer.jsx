@@ -1,27 +1,36 @@
 import React from 'react';
-import { FaFacebookF } from 'react-icons/fa';
+import { FaFacebook } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
-import { FaYoutube } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 
 
 function Footer(){
     return(
         <>
-        <div className='footer-content'>
-                <h3>Code Crushers</h3>
-                <p>Foolish Developer ----- source code.</p>
-            </div>
-        <div class="footer-bottom">
-            <ul class="socials">
-                <li ><a href="#"><i class="fa fa-facebook"><FaFacebookF/></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"><FaTwitter/></i></a></li>
-                <li><a href="#"><i class="fa fa-google-plus"><FaInstagram/></i></a></li>
-                <li><a href="#"><i class="fa fa-youtube"><FaYoutube/></i></a></li>
-                
-            </ul>
-            <p><a href="#">copyright &copy;2021  foolishdeveloper</a></p>
-        </div>
+        <footer>
+		
+		<div class="footer-limiter">
+
+			<div class="footer-right">
+
+				<a href="#"><i class=""><FaFacebook/></i></a>
+				<a href="#"><i class=""><FaTwitter/></i></a>
+				<a href="#"><i class=""><FaInstagram/></i></a>
+				<a href="#"><i class=""><FaGithub/></i></a>
+
+			</div>
+
+			<div class="footer-left">
+
+				<p class="footer-links">Pharmark © 2022</p>
+
+				<p>by Code crushers</p>
+			</div>
+
+		</div>
+
+	</footer>
         </>
     )
 }

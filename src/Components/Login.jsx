@@ -1,6 +1,6 @@
 import React,{useState} from 'react' 
 
-const Login=()=>{ 
+export const Login=()=>{ 
 	const [email,setEmail]=useState(""); 
 	const [passw,setPassw]=useState(""); 
 	const[dataInput, setDataInput]=useState(""); 
