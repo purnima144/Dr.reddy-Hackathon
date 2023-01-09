@@ -10,10 +10,10 @@ import { Results } from "./Components/Results";
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Footer />
-      {/* <Namegenerator /> */}
-      {/* <Results /> */}
+      {/* <Header />
+      <Footer /> */}
+      <Namegenerator /> 
+       {/* <Results /> */}
     </div>
   );
 }
