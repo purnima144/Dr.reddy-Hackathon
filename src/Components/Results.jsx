@@ -1,12 +1,14 @@
 import React from "react";
 import { drugData } from "./Data";
 import Navbar3 from "./Navbar3";
+import ResultPageHeader from "./ResultPageHeader"
+import { Component } from "react";
 
-export const Results = () => {
+export default function Results() {
   return (
-    <>
+    <div>
       <Navbar3 />
-      <HomePageHeader />
+      <ResultPageHeader />
 
       <div className="data-container">
         {drugData.map((details, index) => {
@@ -18,17 +20,8 @@ export const Results = () => {
           );
         })}
       </div>
-    </>
+    </div>
   );
-};
+}
 
-const HomePageHeader = () => {
-  return (
-    <>
-      <header className="header">
-        <p className="drug-name">Drug Names</p>
-        <p className="content">dynamic, pristine and edgy</p>
-      </header>
-    </>
-  );
-};
+
