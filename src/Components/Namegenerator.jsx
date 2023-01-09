@@ -4,7 +4,6 @@ import { Results, fetchData } from "./Results";
 import Navbar2 from "./Navbar2";
 
 function Namegenerator({ setTerm }) {
- 
   return (
     <>
       <Navbar2 />
@@ -14,18 +13,12 @@ function Namegenerator({ setTerm }) {
           <h3> generate brandable drug name using artificial intelligence</h3>
         </p>
 
-        <form className="container1" >
+        <form className="container1">
           <div className="left">
             <label for="fn">
               <b>Input:</b>
             </label>
-            <input
-              type="text"
-              placeholder="Name"
-              name="fn"
-              id="fn"
-              required
-            />
+            <input type="text" placeholder="Name" name="fn" id="fn" required />
 
             <label for="ln">
               <b>Country Name:</b>
@@ -47,9 +40,9 @@ function Namegenerator({ setTerm }) {
             </select>
           </div>
 
-          <button class="generate-btn" type="submit" >
-              Generate
-            </button>
+          <button class="generate-btn" type="submit">
+            Generate
+          </button>
         </form>
       </div>
     </>
