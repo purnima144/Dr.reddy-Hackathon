@@ -697,6 +697,12 @@ input[type="password"]:focus {
 .inner_container {
   display: grid;
   place-items: center;
+  border: 2px solid #573e96;
+  border-radius: 25px;
+  padding: 5px;
+  margin: 5px;
+  width: 80%;
+  height: 80%;
 }
 
 .inner1{
@@ -726,20 +732,35 @@ input[type="password"]:focus {
 .drug-name {
   size: 10cm;
   font-family: "Franklin Gothic Medium";
-  margin-top: 5%;
+  margin-top: auto;
   font-size: xx-large;
   font-stretch: ultra-expanded;
   margin-bottom: 1%;
+  font-weight: 400;
 }
 
 .content {
-  font-family: "Franklin Gothic Medium";
+  font-family: cursive;
   margin: auto;
   font-size: 0.6cm;
   font-stretch: expanded;
-  color: rgb(35, 35, 239);
+  color:#5225b5;
+  font-style: normal;
 
 }
+
+
+.code{
+  display: flex;
+  gap: 45px;
+  font-weight: 600;
+  font-size: large;
+  justify-content: center;
+  
+ 
+ 
+}
+
 
 
 /*Navbar3 css*/

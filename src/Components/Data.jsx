@@ -45,5 +45,13 @@
       name:"abiestran",
       content: "Drug Name Available"
     },
+    {
+      name:"bigagesic",
+      content: "Drug Name Available"
+    },
+    {
+      name:"abiestran",
+      content: "Drug Name Available"
+    },
   ];
 

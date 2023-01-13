@@ -8,6 +8,11 @@ export const Results = () => {
       <Navbar3 />
       <HomePageHeader />
 
+      <div className="code">
+        <p>Country: India</p>
+        <p>Drug Code: 1287</p>
+        <p>Input config: Molecular and Prefix</p>
+      </div>
       <div className="data-container">
         {drugData.map((details, index) => {
           return (
@@ -26,8 +31,8 @@ const HomePageHeader = () => {
   return (
     <>
       <header className="header">
-        <p className="drug-name">Drug Names</p>
-        <p className="content">dynamic, pristine and edgy</p>
+        <p className="drug-name">Suggested Drug Names</p>
+        <p className="content">Dynamic, Pristine and Edgy</p>
       </header>
     </>
   );

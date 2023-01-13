@@ -12,8 +12,9 @@ function App() {
     <div className="App">
       {/* <Header />
       <Footer /> */}
-      <Namegenerator /> 
-       {/* <Results /> */}
+    
+       {/* <Namegenerator />  */}
+       <Results /> 
     </div>
   );
 }

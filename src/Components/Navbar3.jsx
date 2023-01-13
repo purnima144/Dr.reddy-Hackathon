@@ -10,7 +10,6 @@ function Navbar3() {
         <div className="team3">
           <h3>by Code Crushers</h3>
         </div>
-        <hr className="new1" />
       </div>
     </>
   );
